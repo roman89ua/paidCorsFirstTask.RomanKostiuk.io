@@ -6,14 +6,17 @@ body {
     height: 20%;
     width: 20%;
 }
+
+
 /*disigne of ancher down of the page*/
-a{
+
+a {
     color: #000;
     text-decoration: none;
     position: relative;
 }
 
-.linkToTop::before{
+.linkToTop::before {
     content: '';
     bottom: 0;
     left: 0;
@@ -23,21 +26,36 @@ a{
     background-color: #000;
     transition: 0.2s;
 }
+
 .linkToTop:hover:before {
     width: 100%;
 }
+
+
 /*ordered list designe 1.1...*/
 
-.dotedMarkers ol{
-    counter-reset: item; /*встановлює ідентифікатор item,
+.dotedMarkers ol {
+    counter-reset: item;
+    /*встановлює ідентифікатор item,
                          в якому буде зберігатися щотчик,
                          а також початкове значення щотчика*/
 }
-.dotedMarkers li{
+
+.dotedMarkers li {
     display: block;
 }
-.dotedMarkers li:before{ /*:before псевдоелемент, що виводить значення щотчика разом із елементом
+
+.dotedMarkers li:before {
+    /*:before псевдоелемент, що виводить значення щотчика разом із елементом
                             content також за допомогою заданих розділювачів*/
-    content: counters(item, ".") " "; 
-    counter-increment: item; /*збільшує значення щотчика*/
+    content: counters(item, ".") " ";
+    counter-increment: item;
+    /*збільшує значення щотчика*/
+}
+
+
+/*styling first table*/
+
+.firstTable table {
+    border-collapse: collapse;
 }
