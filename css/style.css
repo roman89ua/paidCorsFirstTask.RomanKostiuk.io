@@ -1,8 +1,10 @@
 body {
-    background: burlywood;
+    background: rgb(133, 99, 84);
+    font-family: Arial;
 }
 
 #myPhoto {
+    opacity: 0.6;
     height: 20%;
     width: 20%;
 }
@@ -10,7 +12,7 @@ body {
 
 /*disigne of ancher down of the page*/
 
-a {
+a.linkToTop {
     color: #000;
     text-decoration: none;
     position: relative;
@@ -32,7 +34,7 @@ a {
 }
 
 
-/*ordered list designe 1.1...*/
+/*ordered list designe 1.1.1..*/
 
 .dotedMarkers ol {
     counter-reset: item;
@@ -56,6 +58,9 @@ a {
 
 /*styling first table*/
 
-.firstTable table {
+table {
     border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
