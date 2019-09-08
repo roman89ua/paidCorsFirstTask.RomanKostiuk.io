@@ -8,7 +8,7 @@
     <meta pragma="no-cache">
     <meta cache-controle="no-cache">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <!--<script src="js/script.js"></script>-->
     <title>Document</title>
 </head>
 
@@ -232,13 +232,22 @@
     <!-- end of second home work-->
 
     <!--FORMS-->
-    <h2>Forms. Important!!!!</h2>
-    <div>
-        <form action="get">
-            in
-        </form>
-    </div>
+    <form action="action.php" method="GET" name="firstForm">
+        <label for="userName">Login *</label>
+        <input type="text" name="userName" id="userName" size="30" maxlength="15" minlength="5" required>
+    </form>
+    <form action="action.php" method=GET>
+        <label for="pass"> Password *</label>
+        <input type="password" name="pass" id="pass" size="30" minlength="5" maxlength="25" required>
+    </form>
+    <form action="action.php" method="GET">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+        <input type="button" value="Just a button">
+    </form>
 
+
+    <p>* - this marker indicates a field that cannot be blank</p>
 </body>
 
 </html>
