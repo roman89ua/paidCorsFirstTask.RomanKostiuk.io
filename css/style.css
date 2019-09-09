@@ -104,9 +104,3 @@ table {
 #pass {
     display: flex;
 }
-
-#submit,
-#reset,
-#button {
-    /* display: flex;*/
-}
