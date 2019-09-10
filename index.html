@@ -29,6 +29,7 @@
         <a href="#lists">List as a home work</a>
         <a href="#toffList">Toff list with 1.1.1 counter</a>
         <a href="#table">Table as a home work</a>
+        <a href="#allFormsInONE">Forms</a>
 
     </nav>
     <h2>That is my photo</h2>
@@ -232,7 +233,7 @@
     <!-- end of second home work-->
 
     <!--FORMS-->
-    <form action="php/action.php" method="GET" name="firstForm">
+    <form action="php/action.php" method="GET" name="firstForm" id="allFormsInONE">
 
         <label for="userName">Login *</label>
         <input type="text" name="userName" id="userName" size="30" maxlength="15" minlength="5" required>
@@ -241,6 +242,7 @@
         <label for="pass"> Password *</label>
         <input type="password" name="pass" id="pass" size="30" minlength="5" maxlength="25" required>
         <br>
+        <p>* - this marker indicates a field that can not be blank</p>
         <br>
         <input type="submit" value="Submit">
         <input type="reset" value="Clear">
@@ -254,29 +256,64 @@
         <br>
         <label for="image">My fase ass a bottom</label>
         <br>
-        <input type="image" src="img/me.jpg" height="10%" width="10%" alt="my fase ass a bottom">
+        <input type="image" src="img/me.jpg" height="10%" width="10%" alt="my fase ass a botton">
         <br>
         <br>
-        <Legend>
-            <h3>Pleace answer some questions</h3>
-            <fieldset>
-                <p>Gender?</p>
-                <input type="radio" name="" id="" value="">
-                <input type="radio" name="" id="" value="">
-                <input type="radio" name="" id="" value="">
-                <input type="radio" name="" id="" value="">
-                <input type="radio" name="" id="" value="">
-            </fieldset>
+        <h3 class="toChoiseHeader">Pleace answer some questions</h3>
+        <div class="toChoise">
+            <div class="radioDiv">
+                <fieldset>
+                    <Legend>Gender?</Legend>
+                    <p><input type="radio" name="gender" id="Gender" value="Male">Male</p>
+                    <p><input type="radio" name="gender" id="Gender" value="Female">Female</p>
+                    <p><input type="radio" name="gender" id="Gender" value="Gey">Gey</p>
+                    <p><input type="radio" name="gender" id="Gender" value="Lesbian">Lesbian</p>
+                    <p><input type="radio" name="gender" id="Gender" value="I don't know what I am">I don't know what I am
+                    </p>
+                </fieldset>
+            </div>
+
+            <div class="checkboxDiv">
+                <fieldset>
+                    <Legend>How many kids do you have?</Legend>
+                    <p><input type="checkbox" name="kids" id="kids" value="One">One</p>
+                    <p><input type="checkbox" name="kids" id="kids" value="Two">Two</p>
+                    <p><input type="checkbox" name="kids" id="kids" value="Three">Three</p>
+                    <p><input type="checkbox" name="kids" id="kids" value="Four">Four</p>
+                    <p><input type="checkbox" name="kids" id="kids" value="I made alote of mistakes">I made alote of mistakes
+                    </p>
+                </fieldset>
+            </div>
+
+            <div class="dropedownDiv">
+                <fieldset>
+                    <legend>You not seppose to ansver these questions</legend>
+                    <h4>What bank do you prefere</h4>
+                    <select name="numberOfBanks" id="numberOfBanks">
+                        <option selected="selected" value="0">Стіклянна банка</option>
+                        <option value="1">НБУ</option>
+                        <option value="2">Ощад банк</option>
+                        <option value="3">Приват банк</option>
+                        <option value="4">Райфайзен банк аваль</option>
+                        <option value="5">Укрсиб банк</option>
+                        <option value="6">Укрексім банк</option>
+                    </select>
+                    <h4>Currency that you prefere</h4>
+                    <select name="Currency" id="Currency" size="4" multiple>
+                        <option value="UAH">UAH</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="PLZ">PLZ</option>
+                        <option value="RUB">RUB</option>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
 
 
-            <label for=""></label>
-        </Legend>
+
     </form>
-
-
-
-
-    <p>* - this marker indicates a field that cannot be blank</p>
+    <a class="linkToTop" href="#h">CLICK for SCROL TO TOP</a>
 </body>
 
 </html>
